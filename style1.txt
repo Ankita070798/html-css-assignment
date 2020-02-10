@@ -1,0 +1,47 @@
+.{ box string:border-box;}
+.header{
+	margin top: 10px;
+	width:70%;
+	padding: 20px 0;
+	height:70px;
+	background: #00ffff;
+	color: white;
+	text-align:center;
+}
+.body{
+	width:70%;
+	padding: 20px 0;
+	height:300px;
+	backgorund:#00bfff;
+}
+#firstName{
+	border-radius: 10px;
+}
+
+#lastName{
+	border-radius: 10px;
+}
+
+#E-mail{
+	border-radius: 10px;
+	width: 350px;
+}
+
+#AreaCode{
+	border-radius: 10px;
+}
+
+#PhoneNumber{
+	border-radius: 10px;
+}
+
+#Amount{
+	border-radius: 10px;
+}
+
+#Message{
+	border-radius: 10px;
+	padding: 3px;
+    	width: 350px;
+    	height: 120px;
+}

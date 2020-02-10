@@ -1,0 +1,50 @@
+<html>
+    <head>
+<title>
+	Change Days...
+</title>
+
+<script>
+	var count=0;
+	function myFunction()
+	{
+	 count=parseInt(count)+parseInt(1);
+
+	 var text=document.getElementById("myDiv");
+	 if(count%7==1)
+	 {
+		text.innerHTML="Monday";
+	 }
+	 else if(count%7==2)
+	 {
+		text.innerHTML="Tuesday";
+	 }
+	 else if(count%7==3)
+	 {
+		text.innerHTML="Wednesday";
+	 }
+	 else if(count%7==4)
+	 {
+		text.innerHTML="Thursday";
+	 }
+	 else if(count%7==5)
+	 {
+		text.innerHTML="Friday";
+	 }
+	 else if(count%7==6)
+	 {
+		text.innerHTML="Saturday";
+	 }
+	 else if(count%7==0)
+	 {
+		text.innerHTML="Sunday";
+	 }
+</script>
+</head>
+
+<body>
+	<div id="myDiv">Monday..</div><br>
+	<button onclick="myFunction()">Change Day</button>
+</body>
+
+</html>

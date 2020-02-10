@@ -1,0 +1,38 @@
+<html>
+<head>
+<script>
+	function ValidateEmail(inputText)
+{
+	var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+	if(inputText.value.match(mailformat))
+	{
+		document.form.text.focus();
+		return true;
+	}
+	else
+	{
+		alert("You have entered an invalid email address!");
+		document.form.text.focus();
+		return false;
+	}
+}
+</script>
+</head>
+</body>
+	<div class="container">
+  		<form action="/action_page.php">
+    		<label for="email">Email</label>
+	    	<input type="text" id="Email" name="email" required></br></br>
+
+		<label for="psw">Password</label>
+  		<input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"></br></br>
+
+		 &emsp;   <input type="submit" value="Submit">
+  		</form>
+	</div>
+
+	<div id="message">
+ 
+	</div>
+</body>
+</html>
